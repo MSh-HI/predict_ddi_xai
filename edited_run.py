@@ -36,7 +36,7 @@ for i, (train_idx, test_idx) in enumerate(kf.split(x_idx, y_idx)):
     x_test = x_idx[test_idx]
     y_test = y_idx[test_idx]
 
-    # Convert the training data into tensors (you can add any preprocessing steps here)
+    # Convert the training data into tensors
     SS, TS, GS, y = convert_tensor(x_train, y_train, SS_mat, TS_mat, GS_mat, mlb, idx2label)
     
     # Create a DataLoader for training
