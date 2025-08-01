@@ -8,16 +8,20 @@ A Case Study in Explainable AI for Drug-Drug Interaction Prediction: A SHAP-Base
 The workflow consists of four main components:
 
 edited_run.py
+
 A modified version of the original run.py from the predict_ddi repository.
 This file initializes and trains the model for SHAP analysis.
 
 sampling.py
+
 Generates representative input samples used as background and evaluation data for the SHAP Kernel Explainer.
 
 shap_analysis_kernel.py
+
 Runs the Kernel SHAP Explainer to compute SHAP values for model predictions.
 
 shap_visualization.ipynb
+
 Jupyter notebook for generating both global (e.g., bar, beeswarm) and local (e.g., waterfall) visualizations of SHAP results.
 
 Notes: 
